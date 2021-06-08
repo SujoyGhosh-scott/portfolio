@@ -35,37 +35,37 @@ export default function Drawer({ anchor, toggleDrawer }) {
       <List>
         <ListItem button component="a" href="#home">
           <ListItemIcon>
-            <HomeRoundedIcon color="primary" />
+            <HomeRoundedIcon color="secondary" />
           </ListItemIcon>
           <ListItemText primary="Home" />
         </ListItem>
         <ListItem button component="a" href="#about">
           <ListItemIcon>
-            <AccountBoxRoundedIcon color="primary" />
+            <AccountBoxRoundedIcon color="secondary" />
           </ListItemIcon>
           <ListItemText primary="About" />
         </ListItem>
         <ListItem button component="a" href="#skills">
           <ListItemIcon>
-            <FitnessCenterRoundedIcon color="primary" />
+            <FitnessCenterRoundedIcon color="secondary" />
           </ListItemIcon>
           <ListItemText primary="Skills" />
         </ListItem>
         <ListItem button component="a" href="#experience">
           <ListItemIcon>
-            <HourglassFullRoundedIcon color="primary" />
+            <HourglassFullRoundedIcon color="secondary" />
           </ListItemIcon>
           <ListItemText primary="Experience" />
         </ListItem>
         <ListItem button component="a" href="#projects">
           <ListItemIcon>
-            <AccountTreeRoundedIcon color="primary" />
+            <AccountTreeRoundedIcon color="secondary" />
           </ListItemIcon>
           <ListItemText primary="Projects" />
         </ListItem>
         <ListItem button component="a" href="#contact">
           <ListItemIcon>
-            <CallRoundedIcon color="primary" />
+            <CallRoundedIcon color="secondary" />
           </ListItemIcon>
           <ListItemText primary="Contact" />
         </ListItem>
