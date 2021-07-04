@@ -11,11 +11,13 @@ import TimelineContent from "@material-ui/lab/TimelineContent";
 import TimelineOppositeContent from "@material-ui/lab/TimelineOppositeContent";
 import TimelineDot from "@material-ui/lab/TimelineDot";
 import Paper from "@material-ui/core/Paper";
+import Icon from "@material-ui/core/Icon";
 
 import FastfoodIcon from "@material-ui/icons/Fastfood";
 import LaptopMacIcon from "@material-ui/icons/LaptopMac";
 import ImportContactsIcon from "@material-ui/icons/ImportContacts";
 import ScheduleIcon from "@material-ui/icons/Schedule";
+import sgLogo from "../images/supportGenieLogo.svg";
 
 const useStyles = makeStyles(() => ({
   root: {

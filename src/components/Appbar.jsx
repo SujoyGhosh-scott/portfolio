@@ -15,7 +15,7 @@ function Appbar() {
           justifyContent: "space-between",
         }}
       >
-        <Typography variant="h6" component="h6">
+        <Typography variant="h6" component="h6" className={"light"}>
           Sujoy
         </Typography>
         <SidebarButton />
