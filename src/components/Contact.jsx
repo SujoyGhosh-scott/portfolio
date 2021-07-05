@@ -5,6 +5,7 @@ import Grid from "@material-ui/core/Grid";
 import TextField from "@material-ui/core/TextField";
 import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
+import reactDom from "react-dom";
 
 const useStyles = makeStyles({
   root: {
@@ -13,6 +14,9 @@ const useStyles = makeStyles({
 });
 
 export default function Contact() {
+  const [name, setName] = React.useState("");
+  const [email, setEmail] = React.useState("");
+  const [message, setMessage] = React.useState("");
   const classes = useStyles();
 
   return (
@@ -26,11 +30,13 @@ export default function Contact() {
             component="h3"
             style={{ marginBottom: "1rem" }}
           >
-            <span className={"light"}>G</span>et In to
+            <span className={"light"}>G</span>et in to
             <span className={"light"}>uch</span>
           </Typography>
           <form method="POST">
             <TextField
+              value={name}
+              onChange={(e) => setName(e.target.value)}
               fullWidth
               variant="outlined"
               color="secondary"
@@ -39,6 +45,8 @@ export default function Contact() {
               style={{ marginBottom: "1rem" }}
             />
             <TextField
+              value={email}
+              setEmail={(e) => setEmail(e.target.value)}
               fullWidth
               variant="outlined"
               color="secondary"
@@ -47,6 +55,8 @@ export default function Contact() {
               style={{ marginBottom: "1rem" }}
             />
             <TextField
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
               fullWidth
               variant="outlined"
               color="secondary"
