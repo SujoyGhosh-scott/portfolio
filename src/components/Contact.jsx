@@ -45,7 +45,8 @@ export default function Contact() {
             />
             <TextField
               value={email}
-              setEmail={(e) => setEmail(e.target.value)}
+              onChange={(e) => setEmail(e.target.value)}
+              typeof="email"
               fullWidth
               variant="outlined"
               color="secondary"

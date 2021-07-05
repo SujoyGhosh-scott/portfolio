@@ -18,27 +18,32 @@ function ProjectSection({ title, list, isPackage = false }) {
       </Typography>
       {!isPackage ? (
         <Grid container item justify="center" spacing={2}>
-          <Grid item sm={4} xs={10}>
-            <ProjectCard />
-          </Grid>
-          <Grid item sm={4} xs={10}>
-            <ProjectCard />
-          </Grid>
-          <Grid item sm={4} xs={10}>
-            <ProjectCard />
-          </Grid>
+          {list.map((item) => (
+            <Grid item sm={4} xs={10}>
+              <ProjectCard
+                title={item.title}
+                description={item.description}
+                tags={item.tags}
+                image={item.image}
+                github={item.github}
+                liveLink={item.liveLink}
+              />
+            </Grid>
+          ))}
         </Grid>
       ) : (
         <Grid container item justify="center" spacing={2}>
-          <Grid item sm={4} xs={10}>
-            <PackageCard />
-          </Grid>
-          <Grid item sm={4} xs={10}>
-            <PackageCard />
-          </Grid>
-          <Grid item sm={4} xs={10}>
-            <PackageCard />
-          </Grid>
+          {list.map((item) => (
+            <Grid item sm={4} xs={10}>
+              <PackageCard
+                title={item.title}
+                description={item.description}
+                tags={item.tags}
+                github={item.github}
+                npmLink={item.npmLink}
+              />
+            </Grid>
+          ))}
         </Grid>
       )}
     </Grid>

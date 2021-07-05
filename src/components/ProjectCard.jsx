@@ -13,7 +13,6 @@ import IconButton from "@material-ui/core/IconButton";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import LaunchIcon from "@material-ui/icons/Launch";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
-import work from "../images/work1.jpg";
 
 const useStyles = makeStyles({
   accordian: {
@@ -24,21 +23,20 @@ const useStyles = makeStyles({
   },
 });
 
-function ProjectCard() {
+function ProjectCard({ title, description, github, liveLink, tags, image }) {
   const classes = useStyles();
   return (
     <Card style={{ background: "#6a6c6d96" }}>
-      <img src={work} style={{ height: "180px", width: "100%" }} alt="" />
+      <img src={image} style={{ height: "180px", width: "100%" }} alt="" />
       {/*<CardMedia image={work} />*/}
       <CardContent>
         <Typography gutterBottom variant="h6" component="h2">
-          Project title
+          {title}
         </Typography>
         <Typography variant="body2" color="textSecondary" component="p">
-          <CustomChip label="Material-ui" txt="blue" bg="skyblue" />
-          <CustomChip label="Django" bg="lightgreen" txt="green" />
-          {/*<CustomChip label="Js" bg="yellow" txt="black" />*/}
-          <CustomChip label="GraphQl" bg="pink" txt="purple" />
+          {tags.map((tag) => (
+            <CustomChip label={tag.label} txt={tag.txt} bg={tag.bg} />
+          ))}
         </Typography>
       </CardContent>
       <CardActions>
@@ -47,18 +45,27 @@ function ProjectCard() {
             expandIcon={<ExpandMoreIcon />}
             className={classes.accordian}
           >
-            <IconButton color="secondary" style={{ marginLeft: "auto" }}>
+            <IconButton
+              color="secondary"
+              style={{ marginLeft: "auto" }}
+              component="a"
+              href={github}
+              target="_blank"
+            >
               <GitHubIcon fontSize="small" />
             </IconButton>
-            <IconButton color="secondary">
+            <IconButton
+              color="secondary"
+              component="a"
+              href={github}
+              target="_blank"
+            >
               <LaunchIcon fontSize="small" />
             </IconButton>
           </AccordionSummary>
           <AccordionDetails>
             <Typography variant="body2" color="textSecondary">
-              Project description Lizards are a widespread group of squamate
-              reptiles, with over 6,000 species, ranging across all continents
-              except Antarctica
+              {description}
             </Typography>
           </AccordionDetails>
         </Accordion>

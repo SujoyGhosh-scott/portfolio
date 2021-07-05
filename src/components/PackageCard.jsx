@@ -31,31 +31,35 @@ const useStyles = makeStyles({
   },
 });
 
-function PackageCard() {
+function PackageCard({ title, description, github, tags, npmLink }) {
   const classes = useStyles();
   return (
     <Card style={{ background: "#6a6c6d96" }}>
       <CardContent>
         <Typography gutterBottom variant="h6" component="h2">
-          Package Name
+          {title}
         </Typography>
         <Typography variant="body2" color="textSecondary" component="p">
-          Here I explain why the hell i made this package, and what i want to do
-          with it.
+          {description}
         </Typography>
       </CardContent>
       <CardActions className={classes.cardActions}>
         <Typography variant="body2" color="textSecondary" component="p">
-          <CustomChip label="node.js" bg="lightgreen" txt="green" />
-          <CustomChip label="Js" bg="yellow" txt="black" />
-          <CustomChip label="express" bg="pink" txt="purple" />
+          {tags.map((tag) => (
+            <CustomChip label={tag.label} txt={tag.txt} bg={tag.bg} />
+          ))}
         </Typography>
         <div className={classes.actionButtons}>
-          <IconButton color="secondary">
+          <IconButton
+            color="secondary"
+            component="a"
+            href={github}
+            target="_blank"
+          >
             <GitHubIcon fontSize="small" />
           </IconButton>
-          <IconButton>
-            <Icon classes={classes.iconRoot}>
+          <IconButton component="a" href={npmLink} target="_blank">
+            <Icon classes={classes.iconRoot} fontSize="small">
               <img className={classes.imageIcon} src={npmLogo} alt="" />
             </Icon>
           </IconButton>
