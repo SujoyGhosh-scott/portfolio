@@ -35,7 +35,7 @@ export default function Projects() {
         <ProjectSection title="Frontend" list={[]} />
         <ProjectSection title="Full-stack" list={[]} />
         <ProjectSection title="Django" list={[]} />
-        <ProjectSection title="NPM packages" list={[]} />
+        <ProjectSection title="NPM packages" list={[]} isPackage={true} />
       </Grid>
       <Grid item sm={2} xs={false}></Grid>
     </Grid>

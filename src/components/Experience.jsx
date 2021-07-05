@@ -27,6 +27,10 @@ const useStyles = makeStyles(() => ({
     padding: "10px",
     textAlign: "left",
   },
+  title: {
+    marginBottom: "1rem",
+    width: "100%",
+  },
 }));
 
 export default function Experience() {
@@ -44,7 +48,7 @@ export default function Experience() {
         sm={8}
         xs={12}
       >
-        <Typography variant="h3" component="p" style={{ marginBottom: "1rem" }}>
+        <Typography variant="h4" component="h3" className={classes.title}>
           E<span className={"light"}>xp</span>erience
         </Typography>
         <Timeline align="alternate">

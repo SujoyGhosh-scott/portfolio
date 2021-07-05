@@ -9,6 +9,7 @@ import Typography from "@material-ui/core/Typography";
 const useStyles = makeStyles({
   root: {
     minHeight: "100vh",
+    //marginBottom: "2rem",
   },
 });
 
