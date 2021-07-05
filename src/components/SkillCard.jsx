@@ -11,7 +11,7 @@ const useStyles = makeStyles({
     minHeight: "100vh",
   },
   card: {
-    minHeight: 350,
+    minHeight: 300,
     padding: "1rem",
     background: "#6a6c6d96",
   },
