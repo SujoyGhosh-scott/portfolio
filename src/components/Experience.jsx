@@ -14,7 +14,6 @@ import Paper from "@material-ui/core/Paper";
 import Icon from "@material-ui/core/Icon";
 
 import FastfoodIcon from "@material-ui/icons/Fastfood";
-import LaptopMacIcon from "@material-ui/icons/LaptopMac";
 import ImportContactsIcon from "@material-ui/icons/ImportContacts";
 import ScheduleIcon from "@material-ui/icons/Schedule";
 import sgLogo from "../images/supportGenieLogo.svg";
@@ -30,6 +29,12 @@ const useStyles = makeStyles(() => ({
   title: {
     marginBottom: "1rem",
     width: "100%",
+  },
+  imageIcon: {
+    height: "100%",
+  },
+  iconRoot: {
+    textAlign: "center",
   },
 }));
 
@@ -78,7 +83,9 @@ export default function Experience() {
             </TimelineOppositeContent>
             <TimelineSeparator>
               <TimelineDot color="secondary">
-                <LaptopMacIcon />
+                <Icon classes={classes.iconRoot}>
+                  <img className={classes.imageIcon} src={sgLogo} alt="" />
+                </Icon>
               </TimelineDot>
               <TimelineConnector />
             </TimelineSeparator>
