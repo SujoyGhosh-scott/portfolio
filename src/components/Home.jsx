@@ -9,6 +9,7 @@ import GitHubIcon from "@material-ui/icons/GitHub";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import CodeIcon from "@material-ui/icons/Code";
+import Tooltip from "@material-ui/core/Tooltip";
 
 const useStyles = makeStyles({
   root: {
@@ -69,34 +70,42 @@ export default function Home() {
             CONTACT
           </Button>
           <Grid container justify="space-evenly" style={{ marginTop: "1rem" }}>
-            <a
-              className={classes.icon}
-              href="https://github.com/SujoyGhosh-scott"
-              target="__blank"
-            >
-              <GitHubIcon />
-            </a>
-            <a
-              className={classes.icon}
-              href="https://www.linkedin.com/in/sujoy-ghosh2000/"
-              target="__blank"
-            >
-              <LinkedInIcon />
-            </a>
-            <a
-              className={classes.icon}
-              href="https://www.instagram.com/hayitsscott/"
-              target="__blank"
-            >
-              <InstagramIcon />
-            </a>
-            <a
-              className={classes.icon}
-              href="https://codepen.io/your-work"
-              target="__blank"
-            >
-              <CodeIcon />
-            </a>
+            <Tooltip title="GitHub">
+              <a
+                className={classes.icon}
+                href="https://github.com/SujoyGhosh-scott"
+                target="__blank"
+              >
+                <GitHubIcon />
+              </a>
+            </Tooltip>
+            <Tooltip title="LinkedIn">
+              <a
+                className={classes.icon}
+                href="https://www.linkedin.com/in/sujoy-ghosh2000/"
+                target="__blank"
+              >
+                <LinkedInIcon />
+              </a>
+            </Tooltip>
+            <Tooltip title="Instagram">
+              <a
+                className={classes.icon}
+                href="https://www.instagram.com/hayitsscott/"
+                target="__blank"
+              >
+                <InstagramIcon />
+              </a>
+            </Tooltip>
+            <Tooltip title="Codepen">
+              <a
+                className={classes.icon}
+                href="https://codepen.io/your-work"
+                target="__blank"
+              >
+                <CodeIcon />
+              </a>
+            </Tooltip>
           </Grid>
         </Grid>
         <Grid>

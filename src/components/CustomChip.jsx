@@ -19,6 +19,7 @@ const CustomChip = ({ label, bg, txt }) => {
       style={{
         background: `${bg}`,
         color: `${txt}`,
+        marginBottom: 5,
       }}
       label={label}
     />

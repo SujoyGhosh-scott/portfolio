@@ -13,6 +13,7 @@ import IconButton from "@material-ui/core/IconButton";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import LaunchIcon from "@material-ui/icons/Launch";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+import Tooltip from "@material-ui/core/Tooltip";
 
 const useStyles = makeStyles({
   accordian: {
@@ -27,7 +28,7 @@ function ProjectCard({ title, description, github, liveLink, tags, image }) {
   const classes = useStyles();
   return (
     <Card style={{ background: "#6a6c6d96" }}>
-      <img src={image} style={{ height: "180px", width: "100%" }} alt="" />
+      <img src={image} style={{ height: "150px", width: "100%" }} alt="" />
       {/*<CardMedia image={work} />*/}
       <CardContent>
         <Typography gutterBottom variant="h6" component="h2">
@@ -42,7 +43,11 @@ function ProjectCard({ title, description, github, liveLink, tags, image }) {
       <CardActions>
         <Accordion style={{ width: "100%" }}>
           <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
+            expandIcon={
+              <Tooltip title="Read more">
+                <ExpandMoreIcon />
+              </Tooltip>
+            }
             className={classes.accordian}
           >
             <IconButton
@@ -54,14 +59,16 @@ function ProjectCard({ title, description, github, liveLink, tags, image }) {
             >
               <GitHubIcon fontSize="small" />
             </IconButton>
-            <IconButton
-              color="secondary"
-              component="a"
-              href={github}
-              target="_blank"
-            >
-              <LaunchIcon fontSize="small" />
-            </IconButton>
+            <Tooltip title="Open site in new tab">
+              <IconButton
+                color="secondary"
+                component="a"
+                href={liveLink}
+                target="_blank"
+              >
+                <LaunchIcon fontSize="small" />
+              </IconButton>
+            </Tooltip>
           </AccordionSummary>
           <AccordionDetails>
             <Typography variant="body2" color="textSecondary">
