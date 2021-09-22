@@ -37,11 +37,11 @@ export default function About() {
           component="p"
           style={{ marginRight: "6rem" }}
         >
-          currently pursuing my bachelors' majoring in <b>Computer Sc</b>. I'm
-          really passionate about Web Development and Looking for an opportunity
-          to work as a dedicated and enthusiastic professional where my talent
-          and knowledge can be best utilised for the development of the
-          organization.
+          currently pursuing my masters' majoring in{" "}
+          <strong>Computer Sc</strong>. I'm really passionate about Web
+          Development and Looking for an opportunity to work as a dedicated and
+          enthusiastic professional where my talent and knowledge can be best
+          utilised for the development of the organization.
         </Typography>
       </Grid>
       <Grid item sm={2} xs={false}></Grid>

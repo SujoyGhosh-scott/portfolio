@@ -4,6 +4,7 @@ import nasa from "../images/projects/space-info.png";
 import cube from "../images/projects/cube-shop.png";
 import docs from "../images/projects/docs-clone.png";
 import conv from "../images/projects/curr-conv.png";
+import gameOfLife from "../images/projects/game-of-life.png";
 
 export const frontendProjectList = [
   {
@@ -19,8 +20,8 @@ export const frontendProjectList = [
       },
       {
         label: "Material-ui",
-        bg: "skyblue",
-        txt: "blue",
+        bg: "#2196F3",
+        txt: "white",
       },
     ],
     description:
@@ -39,8 +40,8 @@ export const frontendProjectList = [
       },
       {
         label: "Material-ui",
-        bg: "skyblue",
-        txt: "blue",
+        bg: "#2196F3",
+        txt: "white",
       },
     ],
     description:
@@ -60,6 +61,26 @@ export const frontendProjectList = [
     ],
     description: "This is a basic e-commerce site to buy rubik's cubes.",
   },
+  {
+    title: "The Game of Life",
+    image: gameOfLife,
+    github: "https://github.com/SujoyGhosh-scott/The-Game-of-Life-using-React",
+    liveLink: "https://sg-game-of-life.netlify.app",
+    tags: [
+      {
+        label: "ReactJs",
+        bg: "skyblue",
+        txt: "blue",
+      },
+      {
+        label: "Bootstrap",
+        bg: "#4d04d9",
+        txt: "white",
+      },
+    ],
+    description:
+      "This website helps to convert any ammount of money from one currency system to aother. And shows the selected currencie's value in chart form.",
+  },
 ];
 
 export const fullstackProjectList = [
@@ -76,8 +97,8 @@ export const fullstackProjectList = [
       },
       {
         label: "Material-ui",
-        bg: "skyblue",
-        txt: "blue",
+        bg: "#2196F3",
+        txt: "white",
       },
       {
         label: "node.js",
@@ -94,7 +115,7 @@ export const fullstackProjectList = [
       "This website shows informations and news of different cryptocurrencies, and predicts the price of next 2days of cryptocurrencies.",
   },
   {
-    title: "Project title",
+    title: "Google docs clone",
     image: docs,
     github: "https://github.com/SujoyGhosh-scott/google-docs-clone-reactJs",
     liveLink: "https://sg-google-docs-clone.netlify.app",
@@ -106,8 +127,8 @@ export const fullstackProjectList = [
       },
       {
         label: "Material-ui",
-        bg: "skyblue",
-        txt: "blue",
+        bg: "#2196F3",
+        txt: "white",
       },
       {
         label: "node.js",
@@ -125,7 +146,7 @@ export const fullstackProjectList = [
   },
 ];
 
-export const packageList = [
+export const packageList = []; /*[
   {
     title: "Package Name",
     description:
@@ -174,4 +195,4 @@ export const packageList = [
     github: "https://github.com/SujoyGhosh-scott?tab=repositories",
     npmLink: "https://www.npmjs.com/~sujoyghosh",
   },
-];
+];*/
