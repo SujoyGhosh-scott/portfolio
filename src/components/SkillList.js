@@ -27,13 +27,13 @@ export const backendList = [
   { imgSrc: express, name: "express" },
   { imgSrc: mongodb, name: "MongoDB" },
   { imgSrc: rest, name: "RestAPIs" },
-  { imgSrc: gql, name: "GraphQL" },
+  //{ imgSrc: gql, name: "GraphQL" },
 ];
 
 export const cssList = [
   { imgSrc: css, name: "CSS" },
   { imgSrc: materialUi, name: "Material-UI" },
   { imgSrc: styledComponents, name: "Styled Components" },
-  { imgSrc: tailwind, name: "Tailwind" },
+  //{ imgSrc: tailwind, name: "Tailwind" },
   { imgSrc: bootstrap, name: "Bootstrap" },
 ];
