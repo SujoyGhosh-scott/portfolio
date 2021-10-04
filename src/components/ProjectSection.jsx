@@ -8,13 +8,8 @@ import Typography from "@material-ui/core/Typography";
 function ProjectSection({ title, list, isPackage = false }) {
   return (
     <Grid container direction="column" style={{ marginBottom: "2rem" }}>
-      <Typography
-        variant="h5"
-        component="h3"
-        color="secondary"
-        style={{ marginBottom: "1rem" }}
-      >
-        {title}
+      <Typography variant="h5" component="h3" style={{ marginBottom: "1rem" }}>
+        <u>{title}</u>
       </Typography>
       {!isPackage ? (
         <Grid container item justify="center" spacing={2}>
