@@ -97,10 +97,10 @@ export default function Home() {
                 <InstagramIcon />
               </a>
             </Tooltip>
-            <Tooltip title="Codepen">
+            <Tooltip title="HackerRank">
               <a
                 className={classes.icon}
-                href="https://codepen.io/your-work"
+                href="https://www.hackerrank.com/Sujoy_Ghosh"
                 target="__blank"
               >
                 <CodeIcon />
