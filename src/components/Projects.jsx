@@ -39,11 +39,11 @@ export default function Projects() {
         </Grid>
         <ProjectSection title="Frontend" list={frontendProjectList} />
         <ProjectSection title="Full-stack" list={fullstackProjectList} />
-        <ProjectSection
+        {/**<ProjectSection
           title="NPM packages"
           list={packageList}
           isPackage={true}
-        />
+        /> */}
       </Grid>
       <Grid item sm={2} xs={false}></Grid>
     </Grid>
