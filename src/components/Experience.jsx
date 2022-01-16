@@ -108,6 +108,15 @@ export default function Experience() {
             content="Pursuing M.Sc in CS from St. Xavier's College, Kolkata"
             icon={<ImportContactsIcon />}
           />
+          <Stop
+            date="Dec, 2021"
+            content="Left Support Genie"
+            icon={
+              <Icon classes={classes.iconRoot}>
+                <img className={classes.imageIcon} src={sgLogo} alt="" />
+              </Icon>
+            }
+          />
           <TimelineItem>
             <TimelineOppositeContent>
               <Typography variant="body2" color="textSecondary">

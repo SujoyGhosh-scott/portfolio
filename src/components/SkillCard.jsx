@@ -4,22 +4,24 @@ import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import Card from "@material-ui/core/Card";
-import CardContent from "@material-ui/core/CardContent";
 
 const useStyles = makeStyles({
-  root: {
-    minHeight: "100vh",
-  },
   card: {
-    minHeight: 300,
-    padding: "1rem",
-    background: "#6a6c6d96",
+    background: "transparent",
+    border: "none",
+    boxShadow: "none",
   },
   cardImg: {
-    height: 20,
-    width: 40,
+    height: 40,
     objectFit: "contain",
-    marginRight: "1rem",
+    marginRight: 10,
+    marginBottom: 10,
+  },
+  imageContainer: {
+    marginTop: 10,
+    display: "flex",
+    justifyContent: "space-between",
+    flexWrap: "wrap",
   },
 });
 
@@ -31,20 +33,15 @@ function SkillCard({ title, items }) {
         <Typography variant="h5" className={"light"}>
           {title}
         </Typography>
-        <CardContent>
+        <div className={classes.imageContainer}>
           {items.map((item) => (
-            <Grid container style={{ marginBottom: 10 }} key={item.name}>
-              <img
-                className={classes.cardImg}
-                src={item.imgSrc}
-                alt={item.name}
-              />
-              <Typography color="textSecondary" gutterBottom>
-                {item.name}
-              </Typography>
-            </Grid>
+            <img
+              className={classes.cardImg}
+              src={item.imgSrc}
+              alt={item.name}
+            />
           ))}
-        </CardContent>
+        </div>
       </Card>
     </Grid>
   );
