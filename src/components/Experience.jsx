@@ -6,25 +6,21 @@ import Typography from "@material-ui/core/Typography";
 import Timeline from "@material-ui/lab/Timeline";
 import TimelineItem from "@material-ui/lab/TimelineItem";
 import TimelineSeparator from "@material-ui/lab/TimelineSeparator";
-import TimelineConnector from "@material-ui/lab/TimelineConnector";
 import TimelineContent from "@material-ui/lab/TimelineContent";
 import TimelineOppositeContent from "@material-ui/lab/TimelineOppositeContent";
 import TimelineDot from "@material-ui/lab/TimelineDot";
-import Paper from "@material-ui/core/Paper";
 import Icon from "@material-ui/core/Icon";
 
 import ImportContactsIcon from "@material-ui/icons/ImportContacts";
 import ScheduleIcon from "@material-ui/icons/Schedule";
 import CodeIcon from "@material-ui/icons/Code";
 import sgLogo from "../images/supportGenieLogo.svg";
+import testPdf from "../docs/InternshipCertificateSupportGenie.pdf";
+import Stop from "./Stop";
 
 const useStyles = makeStyles(() => ({
   root: {
     minHeight: "100vh",
-  },
-  paper: {
-    padding: "10px",
-    textAlign: "left",
   },
   title: {
     marginBottom: "1rem",
@@ -37,31 +33,6 @@ const useStyles = makeStyles(() => ({
     textAlign: "center",
   },
 }));
-
-const Stop = ({ date, icon, content, contentTitle }) => {
-  const classes = useStyles();
-  return (
-    <TimelineItem>
-      <TimelineOppositeContent>
-        <Typography variant="body2" color="textSecondary">
-          {date}
-        </Typography>
-      </TimelineOppositeContent>
-      <TimelineSeparator>
-        <TimelineDot color="secondary">{icon}</TimelineDot>
-        <TimelineConnector />
-      </TimelineSeparator>
-      <TimelineContent>
-        <Paper elevation={3} className={classes.paper}>
-          <Typography variant="h6" component="h1" color="secondary">
-            {contentTitle}
-          </Typography>
-          <Typography>{content}</Typography>
-        </Paper>
-      </TimelineContent>
-    </TimelineItem>
-  );
-};
 
 export default function Experience() {
   const classes = useStyles();
@@ -111,6 +82,7 @@ export default function Experience() {
           <Stop
             date="Dec, 2021"
             content="Left Support Genie"
+            docSrc={testPdf}
             icon={
               <Icon classes={classes.iconRoot}>
                 <img className={classes.imageIcon} src={sgLogo} alt="" />
