@@ -77,8 +77,8 @@ const Stop = ({ date, icon, content, contentTitle, docSrc }) => {
                 </div>
                 <DialogContent>
                   <iframe
-                    src={docSrc}
-                    title="testPdf"
+                    src={`${docSrc}#toolbar=0`}
+                    title="Certificate"
                     width="100%"
                     height="98%"
                   />

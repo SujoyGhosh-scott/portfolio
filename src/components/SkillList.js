@@ -12,12 +12,14 @@ import css from "../images/css.png";
 import bootstrap from "../images/bootstrap.svg";
 import styledComponents from "../images/styledComponents2.png";
 import materialUi from "../images/material-ui.png";
-import tailwind from "../images/tailwind.png";
+import nextJs from "../images/nextjs2.png";
+//import tailwind from "../images/tailwind.png";
 
 export const frontendList = [
   { imgSrc: html, name: "HTML" },
   { imgSrc: js, name: "JavaScript" },
   { imgSrc: reactIcon, name: "ReactJS" },
+  { imgSrc: nextJs, name: "NextJS" },
   { imgSrc: python, name: "Python" },
   { imgSrc: c, name: "C" },
 ];
@@ -27,7 +29,7 @@ export const backendList = [
   { imgSrc: express, name: "express" },
   { imgSrc: mongodb, name: "MongoDB" },
   { imgSrc: rest, name: "RestAPIs" },
-  //{ imgSrc: gql, name: "GraphQL" },
+  { imgSrc: gql, name: "GraphQL" },
 ];
 
 export const cssList = [
