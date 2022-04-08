@@ -15,6 +15,7 @@ import ImportContactsIcon from "@material-ui/icons/ImportContacts";
 import ScheduleIcon from "@material-ui/icons/Schedule";
 import CodeIcon from "@material-ui/icons/Code";
 import sgLogo from "../images/supportGenieLogo.svg";
+import whales from "../images/whalesNetwork.png";
 import testPdf from "../docs/InternshipCertificateSupportGenie.pdf";
 import Stop from "./Stop";
 
@@ -86,6 +87,16 @@ export default function Experience() {
             icon={
               <Icon classes={classes.iconRoot}>
                 <img className={classes.imageIcon} src={sgLogo} alt="" />
+              </Icon>
+            }
+          />
+          <Stop
+            date="Sept, 2021"
+            contentTitle="WhalesNetwork"
+            content="App Developer in React Native"
+            icon={
+              <Icon classes={classes.iconRoot}>
+                <img className={classes.imageIcon} src={whales} alt="" />
               </Icon>
             }
           />
