@@ -91,9 +91,9 @@ export default function Experience() {
             }
           />
           <Stop
-            date="Sept, 2021"
-            contentTitle="WhalesNetwork"
-            content="App Developer in React Native"
+            date="Feb, 2022"
+            content="App developer in React Native"
+            contentTitle="Whales Network"
             icon={
               <Icon classes={classes.iconRoot}>
                 <img className={classes.imageIcon} src={whales} alt="" />
