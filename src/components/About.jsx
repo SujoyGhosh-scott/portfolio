@@ -38,10 +38,11 @@ export default function About() {
           style={{ marginRight: "6rem" }}
         >
           currently pursuing my masters' majoring in{" "}
-          <strong>Computer Sc</strong>. I'm really passionate about Web
-          Development and Looking for an opportunity to work as a dedicated and
-          enthusiastic professional where my talent and knowledge can be best
-          utilised for the development of the organization.
+          <strong>Computer Sc</strong> from St. Xavier's College Kolkata, India.
+          I'm really passionate about Web Development and Looking for an
+          opportunity to work as a dedicated and enthusiastic professional where
+          my talent and knowledge can be best utilised for the development of
+          the organization.
         </Typography>
       </Grid>
       <Grid item sm={2} xs={false}></Grid>

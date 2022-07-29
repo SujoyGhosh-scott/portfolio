@@ -16,6 +16,7 @@ import ScheduleIcon from "@material-ui/icons/Schedule";
 import CodeIcon from "@material-ui/icons/Code";
 import sgLogo from "../images/supportGenieLogo.svg";
 import whales from "../images/whalesNetwork.png";
+import yubiHealth from "../images/yubiHealth.png";
 import testPdf from "../docs/InternshipCertificateSupportGenie.pdf";
 import Stop from "./Stop";
 
@@ -92,11 +93,21 @@ export default function Experience() {
           />
           <Stop
             date="Feb, 2022"
-            content="App developer in React Native"
+            content="App developer using React Native"
             contentTitle="Whales Network"
             icon={
               <Icon classes={classes.iconRoot}>
                 <img className={classes.imageIcon} src={whales} alt="" />
+              </Icon>
+            }
+          />
+          <Stop
+            date="Jun, 2022"
+            content="Software developer intern"
+            contentTitle="YubiHealth"
+            icon={
+              <Icon classes={classes.iconRoot}>
+                <img className={classes.imageIcon} src={yubiHealth} alt="" />
               </Icon>
             }
           />
